@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#071b55">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="FRIEND Meat">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>F.R.I.E.N.D. Meat Department</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app" aria-live="polite"></main>
+  <div id="toast" role="status"></div>
+  <dialog id="assistant">
+    <div class="dialog-head">
+      <div class="assistant-brand">
+        <div class="assistant-speech">
+          <strong>FRIEND AI Assistant</strong>
+          <span>How can I help with your meat department tasks today?</span>
+        </div>
+      </div>
+      <button id="assistant-close" aria-label="Close">×</button>
+    </div>
+    <div id="chat">
+      <p class="assistant-welcome">I’m ready to help with rotations, temperatures, 5S, or any SOP.</p>
+    </div>
+    <form id="assistant-form">
+      <input id="assistant-input" autocomplete="off" placeholder="Ask about a task or SOP…" aria-label="Assistant request">
+      <button type="submit">Send</button>
+    </form>
+  </dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
